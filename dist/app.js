@@ -2,6 +2,8 @@
 exports.__esModule = true;
 var Spacecraft_1 = require("./classes/Spacecraft");
 var MillenniumFalcon_1 = require("./classes/MillenniumFalcon");
+var _ = require("lodash");
+console.log(_.pad("Typescript Examples", 40, "="));
 var ship = new Spacecraft_1.SpaceCraft("hyperdrive");
 ship.jumpIntoHyperspace();
 var falcon = new MillenniumFalcon_1.MillenniumFalcon();
