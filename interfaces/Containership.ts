@@ -1,3 +1,3 @@
 export interface ContainerShip {
-  cargoContainers: number;
+	cargoContainers: number;
 }

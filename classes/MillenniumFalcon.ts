@@ -1,19 +1,19 @@
-import { SpaceCraft } from "./Spacecraft";
-import { ContainerShip } from "../interfaces/Containership";
+import {SpaceCraft} from "./Spacecraft";
+import {ContainerShip} from "../interfaces/Containership";
 
 export class MillenniumFalcon extends SpaceCraft implements ContainerShip {
-  cargoContainers: number;
+	cargoContainers: number;
 
-  constructor() {
-    super("hyperdrive");
-    this.cargoContainers = 4;
-  }
+	constructor() {
+		super("hyperdrive");
+		this.cargoContainers = 2;
+	}
 
-  jumpIntoHyperspace() {
-    if (Math.random() >= 0.5) {
-      super.jumpIntoHyperspace();
-    } else {
-      console.log("Failed to jump into hyperspace");
-    }
-  }
+	jumpIntoHyperspace() {
+		if (Math.random() >= 0.5) {
+			super.jumpIntoHyperspace();
+		} else {
+			console.log("Failed to jump into hyperspace");
+		}
+	}
 }
